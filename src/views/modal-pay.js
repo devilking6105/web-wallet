@@ -343,14 +343,14 @@ export class ModalPay {
             if (this.selectedPayToAddress.length > 32) {
                 this.isValidPayToAddress = this.selectedPayToAddress.startsWith('B') ? true : false;
                 if (!this.isValidPayToAddress) {
-                    this.error = 'Invalid Beetle Address';
+                    this.error = 'Invalid HTH Address';
                 } else {
                     if (walletLib.isValidAddress(this.selectedPayToAddress)) {
                         this.isValidPayToAddress = true;
                         this.error = null;
                     } else {
                         this.isValidPayToAddress = false;
-                        this.error = 'Invalid Beetle Address';
+                        this.error = 'Invalid HTH Address';
                     }
                 }
             } else {
