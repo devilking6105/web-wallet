@@ -13,7 +13,7 @@
                     <form>
 
                         <div class="available">
-                            <h3 class="display-5">Available Balance: ${selectedPayFromAddressesSpendableBalance.toBalance(2)} BEET</h3>
+                            <h3 class="display-5">Available Balance: ${selectedPayFromAddressesSpendableBalance.toBalance(2)} HTH</h3>
                             <div class="from">${selectedPayFromAddressesSpendableBalanceInfo}</div>
                         </div>
 
@@ -25,9 +25,9 @@
                             <div class="col-sm-9 input-group">
                                 <input type="text" class="form-control ${!isValidPayAmount ? 'is-invalid' : ''}" id="amount" value.bind="payAmount" input.delegate="validatePayAmount($event) & debounce:200">
                                     <div class="input-group-append">
-                                        <!-- <span class="input-group-text" id="basic-addon2">BEET</span> -->
+                                        <!-- <span class="input-group-text" id="basic-addon2">HTH</span> -->
                                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            BEET &nbsp; &nbsp;
+                                            HTH &nbsp; &nbsp;
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="#" click.delegate="spendAllFundsFromSelectedAddresses()">Send all funds from chosen addresses</a>
@@ -175,22 +175,22 @@
 
                             <hr/>
 
-                            You will pay an amount of <strong>${tx.totals.payAmount.value}</strong> BEET to address <strong>${tx.payAddress}</strong>, from
+                            You will pay an amount of <strong>${tx.totals.payAmount.value}</strong> HTH to address <strong>${tx.payAddress}</strong>, from
                             <strong>${tx.fromAddresses}</strong>.<br/><br/>
 
-                            A transaction fee of <strong>${tx.totals.txFee.value}</strong> BEET will be added, resulting in a total
-                            transaction spend of <strong>${tx.totals.payAmountInclFees.value}</strong> BEET.
+                            A transaction fee of <strong>${tx.totals.txFee.value}</strong> HTH will be added, resulting in a total
+                            transaction spend of <strong>${tx.totals.payAmountInclFees.value}</strong> HTH.
                             <br/><br/>
 
                             The total inputs used for this transaction (the minimum amount of UTXO's used) is <strong>${tx.totals.selectedFromOutputs.value}</strong>
-                            BEET, resulting in an amount of <strong>${tx.totals.changeAmount.value}</strong> BEET in change.
+                            HTH, resulting in an amount of <strong>${tx.totals.changeAmount.value}</strong> HTH in change.
                             <span show.bind="tx.totals.changeAmount.value > 0">It will be returned to <strong>${tx.changeAddress}</strong>.</span>
                             <br/><br/>
 
                             Selected Inputs:<br/>
                             <ul>
                                 <li repeat.for="input of tx.inputs">
-                                    ${input.txid} &nbsp; &nbsp; &nbsp; ${input.amount} BEET
+                                    ${input.txid} &nbsp; &nbsp; &nbsp; ${input.amount} HTH
                                 </li>
                             </ul>
 
