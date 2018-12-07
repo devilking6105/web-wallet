@@ -22,7 +22,7 @@ let useHardenedAddresses = false;
 let useBip38 = false;
 
 let network = {
-    messagePrefix: '\x19Beetlecoin Signed Message:\n',
+    messagePrefix: '\x19HTH COIN Signed Message:\n',
     bip32: {
         public: 0x0488b21e,
         private: 0x0488ade4
@@ -256,10 +256,10 @@ function deriveWalletFromPhrase(phrase, network, derivationPath, numberOfAddress
 
 function estimateTxFee(payAmount, fromAddresses, lockTxAmount, minConfirmations) {
 
-    // FEE = 0.1 BEET per 1000 bytes
+    // FEE = 0.1 HTH per 1000 bytes
     // 1 UTXO == roughly 226 bytes
-    // Therefore, 0.1 BEET per 6 selected UTXO's
-    // To be safe, settle on 0.1 BEET per 5 UTXO's ??
+    // Therefore, 0.1 HTH per 6 selected UTXO's
+    // To be safe, settle on 0.1 HTH per 5 UTXO's ??
 
     payAmount = new decimal.Decimal(payAmount);
 
