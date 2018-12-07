@@ -1,7 +1,7 @@
 
 
 let network = {
-    messagePrefix: '\x19Beetlecoin Signed Message:\n',
+    messagePrefix: '\x19Help The Homeless Coin Signed Message:\n',
     bip32: {
         public: 0x0488b21e,
         private: 0x0488ade4
