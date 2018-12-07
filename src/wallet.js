@@ -59,7 +59,7 @@ export class WalletApp {
             }
         }
 
-        config.title = 'Beetle Coin';
+        config.title = 'Help The Homeless Coin';
         config.mapUnknownRoutes('views/404');
         config.addPipelineStep('authorize', AuthorizeStep);
         config.map([
