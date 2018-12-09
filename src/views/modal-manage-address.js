@@ -69,7 +69,7 @@ export class ManageAddress {
             this.isValidAddress = false;
         } else {
             if (this.address.length > 32) {
-                this.isValidAddress = this.address.startsWith('B') ? true : false;
+                this.isValidAddress = this.address.startsWith('H') ? true : false;
                 if (!this.isValidAddress) {
                     this.error = 'Invalid Address';
                     this.info = null;
