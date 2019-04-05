@@ -1,2 +1,2 @@
 # web-wallet
-Web wallet UI for Beetlecoin
+Web wallet UI for HTH Coin
