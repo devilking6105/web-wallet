@@ -57,7 +57,7 @@ export class WalletApi {
     }
 
     // getAddressBalance(address) {
-    //     //https://explorer.hthcoin.world/ext/getbalance/RMDZxNWtCyEPbME8WA5BBaWqNQzXd4pKxa
+    //     //https://explorer.hthcoin.world/ext/getbalance/HLiz9wyJ6PioWyNQ8t7AVnnoqT3GJeNens
     //     return new Promise((resolve, reject) => {
     //         this.http.get('/network/info').then(response => {
     //             resolve(response.content);
