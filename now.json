@@ -1,9 +1,7 @@
 {
-    "name": "beetlecoin-webwallet",
-  "description": "A web wallet UI for Help The Homeless Coin.",
+    "name": "HTH-Web-Wallet",
   "repository": {
-    "type": "???",
-    "url": "???"
+  "url": "https://scrutinytestingandmesswithcodeonly.hth.world/"
   },
   "license": "MIT",
   "dependencies": {
